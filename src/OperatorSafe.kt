@@ -96,6 +96,37 @@ class Test {
     }
 
 
+    fun basis() {
+
+    }
+
+    fun b() {
+        basis()
+        var x = basis()
+    }
+
+    fun unitFun(): Unit {
+        println("unit")
+    }
+
+
+    fun returnFun(): Int {
+        funArgs(1, 2f)
+        return 2
+    }
+
+
+    fun funArgs(numA: Int, numB: Float) {
+        println("numA = $numA \t numB = $numB")
+    }
+
+    fun defArgs(numA: Int = 1, numB: Float = 2f, numC: Boolean = false) {
+        println("numA = $numA \t numB = $numB \t numC = $numC")
+    }
+
+    
+
+
 }
 
 
